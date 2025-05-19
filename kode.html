@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Interaktif - Komentar Tersembunyi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #2c3e50;
+    }
+
+    .article {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    #tombol-komentar {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #tombol-komentar:hover {
+      background-color: #2980b9;
+    }
+
+    #komentar {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    #komentar h3 {
+      margin-bottom: 15px;
+      color: #2d3436;
+    }
+
+    .comment {
+      background-color: #f1f7ff;
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Blog Desain & Digital</h1>
+    </header>
+
+    <article class="article">
+      <p>
+        Selamat datang di blog kami! Di sini Anda bisa menemukan berbagai artikel
+        seputar desain grafis, pengembangan web, dan strategi digital terkini
+        untuk bisnis modern.
+      </p>
+    </article>
+
+    <button id="tombol-komentar">💬 Tampilkan Komentar</button>
+
+    <section id="komentar">
+      <h3>🗨️ Komentar Pembaca:</h3>
+      <div class="comment">
+        <strong>bunga:</strong> Artikelnya informatif dan sangat mudah dipahami!
+      </div>
+      <div class="comment">
+        <strong>khaleda:</strong> Saya suka tampilannya, ditunggu artikel berikutnya.
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const tombolKomentar = document.getElementById('tombol-komentar');
+    const komentar = document.getElementById('komentar');
+
+    tombolKomentar.addEventListener('click', () => {
+      const isHidden = komentar.style.display === 'none' || komentar.style.display === '';
+      komentar.style.display = isHidden ? 'block' : 'none';
+      tombolKomentar.textContent = isHidden ? '🙈 Sembunyikan Komentar' : '💬 Tampilkan Komentar';
+    });
+  </script>
+</body>
+</html>
