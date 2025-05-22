@@ -1,0 +1,40 @@
+/* style.css */
+
+/* Membuat gambar menjadi fleksibel agar menyesuaikan ukuran wadahnya */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Contoh styling container untuk teks agar tidak meluber ke luar layar */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Media queries untuk menyesuaikan tampilan pada perangkat dengan layar kecil */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+}
+
+/* Ukuran font lebih kecil untuk perangkat sangat kecil */
+@media (max-width: 360px) {
+  .container {
+    font-size: 14px;
+  }
+}
+
