@@ -1,26 +1,36 @@
 # PerancanganWeb-DesainGrafis-BisDig
 
-# 📘 Blog Interaktif - Komentar Tersembunyi
+Repositori ini berisi kumpulan tugas dari mata kuliah *Perancangan Web dan Desain Grafis*, Program Studi Bisnis Digital. Tugas-tugas ini membahas konsep dasar interaktivitas dengan JavaScript, responsive design dengan CSS, prinsip UI/UX, pentingnya prototyping dalam pengembangan web, serta struktur HTML5 yang semantik.
 
-Ini adalah proyek blog sederhana berbasis HTML, CSS, dan JavaScript yang memungkinkan pengguna menampilkan atau menyembunyikan komentar pembaca melalui tombol interaktif. Desainnya responsif, ringan, dan cocok untuk pemula yang ingin memahami interaksi dasar pada halaman web.
+---
 
-## 🖼️ Tampilan
-Blog memiliki tampilan modern dengan latar gradien, efek animasi saat komentar muncul, dan tombol interaktif untuk mengatur visibilitas komentar.
+## ✅ No 1 – Interaktivitas dengan JavaScript
 
-## 🚀 Fitur
-- 🌐 Desain responsif dan bersih
-- 💬 Tombol untuk menampilkan/sembunyikan komentar
-- 🎨 Animasi `fadeIn` saat komentar ditampilkan
-- 📱 Cocok untuk tampilan mobile dan desktop
-- 🧠 Kode JavaScript ringan dan mudah dipahami
+Untuk menciptakan interaktivitas sederhana seperti tombol "Tampilkan Komentar", JavaScript dapat digunakan untuk mengatur visibilitas elemen HTML. Dengan bantuan JavaScript, komentar dapat disembunyikan saat halaman pertama kali dimuat, dan ditampilkan ketika tombol diklik. Pendekatan ini meningkatkan pengalaman pengguna karena halaman menjadi lebih bersih dan tidak terlalu penuh secara visual saat pertama kali dilihat.
 
-## 🛠️ Teknologi yang Digunakan
-- **HTML5** untuk struktur halaman
-- **CSS3** untuk styling dan animasi
-- **JavaScript** untuk interaktivitas tombol komentar
+---
 
-## 📂 Struktur Proyek
+## ✅ No 2 – Responsive Design dengan Media Queries
 
-blog-interaktif-komentar/
-├── index.html ← File utama halaman blog
-└── README.md ← Dokumentasi proyek ini
+Responsive design adalah pendekatan dalam pengembangan web yang memungkinkan tampilan halaman menyesuaikan secara otomatis dengan berbagai ukuran layar dan perangkat. Salah satu teknik utama dalam responsive design adalah penggunaan media queries di CSS, yang memungkinkan pengembang menetapkan aturan tampilan khusus berdasarkan lebar layar perangkat. Dengan demikian, elemen seperti gambar dan teks akan tampil dengan ukuran yang proporsional dan tidak meluber ke luar layar, terutama pada smartphone.
+
+---
+
+## ✅ No 3 – Prinsip UI/UX dan Desain Grafis
+
+UI (User Interface) dan UX (User Experience) sangat penting dalam perancangan web karena menentukan bagaimana pengguna berinteraksi dengan antarmuka. Prinsip-prinsip desain grafis seperti hierarki visual, kontras, dan whitespace digunakan untuk memandu perhatian pengguna, memperjelas informasi, dan menciptakan kenyamanan visual. Hierarki visual membantu pengguna memahami bagian terpenting dari halaman, kontras memastikan keterbacaan, dan whitespace memberikan ruang agar tampilan tidak terasa padat atau membingungkan.
+
+---
+
+## ✅ No 4 – Manfaat Prototipe Figma & Komponen Desain
+
+Pembuatan prototipe desain dengan tools seperti Figma sebelum proses pengembangan memberikan banyak keuntungan. Prototipe memungkinkan pengujian ide, evaluasi UI/UX secara awal, dan mempermudah kolaborasi antar tim. Dengan adanya prototipe, pengembang dapat memahami struktur halaman dan fungsionalitas yang diinginkan sebelum menulis kode, sehingga menghemat waktu dan mengurangi kesalahan. Setelah itu, desain dapat direalisasikan menjadi komponen HTML seperti "PromoCard" yang berisi gambar, judul, dan tombol Call To Action.
+
+---
+
+## ✅ No 5 – Struktur Dasar HTML5 untuk Halaman Profil
+
+Struktur dasar HTML5 sangat penting untuk membangun halaman yang terorganisir dan mudah diakses. Elemen semantik seperti `<header>`, `<main>`, `<section>`, dan `<footer>` digunakan untuk memisahkan bagian-bagian konten secara logis. Dalam konteks halaman profil seorang fotografer, struktur ini membantu menampilkan informasi pribadi, portofolio gambar, dan tautan media sosial dengan rapi. Dengan struktur yang jelas, halaman menjadi lebih mudah dinavigasi dan SEO-friendly.
+
+---
+
